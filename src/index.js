@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import SearchBar from './components/SearchBar'
+import TodoHeader from './components/TodoHeader'
+import TodoList from './components/TodoList'
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TodoHeader/>
+    <SearchBar/>
+    <TodoList/>
   </React.StrictMode>,
   document.getElementById('root')
 );
